@@ -1,0 +1,1 @@
+package com.noah.mall.tiny.dao;import com.noah.mall.tiny.mbg.model.UmsPermission;import org.apache.ibatis.annotations.Param;import java.util.List;/** * 后台用户与角色管理自定义Dao * Created by Noah on 2022/3/10. */public interface UmsAdminRoleRelationDao {    /**     * 获取用户所有权限(包括+-权限)     */    List<UmsPermission> getPermissionList(@Param("adminId") Long adminId);}
